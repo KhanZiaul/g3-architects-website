@@ -1,4 +1,4 @@
-/* Universal Style */
+/* universal Style */
 
 *{
     padding: 0;
@@ -13,7 +13,7 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 
-/* Navigation Style */
+/* navigation Style */
 
 #navigation{
 display: flex;
@@ -91,9 +91,9 @@ justify-content: space-between;
     display: block;
 }
 
-/* Quick list of our feature */
+/* quick list of our features */
 
-.features{
+.features_quicklist{
     display: flex;
     justify-content:center;
     align-items: center;
@@ -101,36 +101,45 @@ justify-content: space-between;
     gap:30px;
 }
 
-.feature_images{
-display:grid;
-grid-template-columns: repeat(2,1fr);
-gap: 15px;
+.features_quicklist_images{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
 }
-.feature_image{
+
+.features_quicklist_image{
     width: 290px;
     height: 260px;
     border-radius: 8px;
 }
 
-.title_feature{
-    font-weight: 500;
+.features_quicklist_title{
+    font-weight: 700;
     font-size: 45px;
     margin-bottom: 20px;
 }
-.list_word_color{
+
+/* features quick list title word color */
+
+.quick_list_word{
     color: #727272;
+    font-weight: 500;
 }
-.feature_word_color{
+
+.features_word{
     color:#FF900E;
 }
-.feature_summary{
+
+/* --------------------------------------- */
+
+.features_quicklist_summary{
     font-weight: 400;
     font-size: 12px;
     color: #727272;
     margin-bottom: 28px;
 }
 
-.feature_button{
+.features_quicklist_button{
     font-weight: 500;
     font-size: 20px;
     color: #FFFFFF;
@@ -140,82 +149,174 @@ gap: 15px;
     height: 50px;
     border-radius: 8px;
 }
+
+
+/* Features Description */
+
+.features_description{
+    display: flex;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+    margin: 130px 90px 200px 90px;
+}
+
+.features_title{
+
+    font-weight: 800;
+    font-size: 40px;
+    color: #131313;
+    border-left: 4px solid #FF900E;
+    margin-bottom: 24px;
+    padding-left: 15px;
+    margin-right: 146px;
+}
+
+.features_summary{
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+.feature{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 30px;
+}
+
+.feature_title{
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+    margin-bottom: 7px;
+}
+
+.feature_summary{
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+}
+
+.features_image img{
+    width: 620px;
+    height: 870px;
+    border-radius: 8px;
+}
+
 /* Responsiveness */
 
 @media screen and (max-width:768px) {
-        #navigation{
+    #navigation{
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        }
-        #navigation_list{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        #navigation_list a{
-            font-weight: 500;
-            font-size: 20px;
-            padding:20px ;
-        }
-        #navigation_text{
-            font-weight: 600;
-            font-size: 40px;
-            margin: 10px;
-        }
-        .bannner_title{
-            font-weight: 600;
-            font-size: 40px;
-            color: #131313;
-            margin-top: 20px;
-            text-align:center;
-        }
-        .bannner_title_two{
-            font-weight: 600;
-            font-size: 40px;
-            color: #131313;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-        .banner_summary{
-            font-weight: 400;
-            font-size: 14px;
-            color: #727272;
-            text-align: center;
-            margin: 0;
-        }
-        .features{
-            justify-content:center;
-            align-items: center;
-            flex-direction: column;
-            margin:10px 0 0 0;
-            gap:30px;
-        }
-        .feature_images{
-            grid-template-columns: repeat(1,1fr);
-            gap: 15px;
-       }
-       .title_feature{
+    }
+    #navigation_list{
+        flex-direction: column;
+    }
+    #navigation_list a{
+        font-weight: 500;
+        font-size: 20px;
+        padding:20px ;
+    }
+    #navigation_text{
+        font-weight: 600;
+        font-size: 40px;
+        margin: 10px;
+    }
+    .bannner_title{
+        font-weight: 600;
+        font-size: 40px;
+        margin-top: 20px;
+        text-align:center;
+    }
+    .bannner_title_two{
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .banner_summary{
+        font-weight: 400;
+        font-size: 14px;
+        color: #727272;
+        text-align: center;
+        margin: 0;
+    }
+    #banner_image{
+        width: 100%;
+        height: 100%;
+    }
+    .features_quicklist{
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        margin:10px 0 0 0;
+        gap:30px;
+    }
+    .features_quicklist_images{
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+    }
+    .features_quicklist_image{
+        width: 100%;
+        height: 100%;
+        border-radius:0;
+    }
+    .features_quicklist_title{
         font-weight: 400;
         font-size: 40px;
         text-align: center;
         margin-bottom: 20px;
     }
   
-    .feature_summary{
+    .features_quicklist_summary{
         font-weight: 400;
         font-size: 14px;
         margin-bottom: 20px;
         text-align: center;
     }
-    .feature_button{
+    .features_quicklist_button{
         font-weight: 400;
     }
-    .about_feature{
+    .about_features_quicklist{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .features_description{
+        flex-direction: column;
+        gap:40px;
+        align-items: center;
+        justify-content:center;
+        margin: 0;
+    }
+    .features_title{
+
+        font-weight: 600;
+        font-size: 35px;
+        border-left: 4px solid #FF900E;
+        margin-bottom: 24px;
+        padding-left: 10px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .features_summary{
+        font-weight: 400;
+        font-size: 14px;
+        color: #727272;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .features_image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
     }
 }
