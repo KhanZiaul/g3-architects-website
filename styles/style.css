@@ -1,0 +1,221 @@
+/* Universal Style */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header style */
+
+#header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* Navigation Style */
+
+#navigation{
+display: flex;
+justify-content: space-between;
+}
+
+#navigation_text{
+    font-weight: 700;
+    font-size: 45px;
+    margin: 50px;
+}
+
+#navigation_list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation_list a{
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+    text-decoration: none;
+    display: block;
+    padding:30px ;
+}
+
+/* banner style */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannner_title{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+    margin-top: 116px;
+}
+.bannner_title_two{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+    margin-bottom: 32px;
+}
+
+.banner_summary{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 10px;
+}
+
+#banner_button{
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border:none;
+    width: 160px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+
+#banner_image{
+    width: 80%;
+    height: 60%;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Quick list of our feature */
+
+.features{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 130px 150px;
+    gap:30px;
+}
+
+.feature_images{
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap: 15px;
+}
+.feature_image{
+    width: 290px;
+    height: 260px;
+    border-radius: 8px;
+}
+
+.title_feature{
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.list_word_color{
+    color: #727272;
+}
+.feature_word_color{
+    color:#FF900E;
+}
+.feature_summary{
+    font-weight: 400;
+    font-size: 12px;
+    color: #727272;
+    margin-bottom: 28px;
+}
+
+.feature_button{
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border:none;
+    width: 160px;
+    height: 50px;
+    border-radius: 8px;
+}
+/* Responsiveness */
+
+@media screen and (max-width:768px) {
+        #navigation{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        }
+        #navigation_list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #navigation_list a{
+            font-weight: 500;
+            font-size: 20px;
+            padding:20px ;
+        }
+        #navigation_text{
+            font-weight: 600;
+            font-size: 40px;
+            margin: 10px;
+        }
+        .bannner_title{
+            font-weight: 600;
+            font-size: 40px;
+            color: #131313;
+            margin-top: 20px;
+            text-align:center;
+        }
+        .bannner_title_two{
+            font-weight: 600;
+            font-size: 40px;
+            color: #131313;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .banner_summary{
+            font-weight: 400;
+            font-size: 14px;
+            color: #727272;
+            text-align: center;
+            margin: 0;
+        }
+        .features{
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            margin:10px 0 0 0;
+            gap:30px;
+        }
+        .feature_images{
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+       }
+       .title_feature{
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+  
+    .feature_summary{
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .feature_button{
+        font-weight: 400;
+    }
+    .about_feature{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
