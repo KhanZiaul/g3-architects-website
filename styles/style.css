@@ -65,6 +65,7 @@ justify-content: space-between;
     color: #131313;
     margin-top: 116px;
 }
+
 .banner_title_two{
 
     font-weight: 700;
@@ -150,6 +151,7 @@ justify-content: space-between;
 /* --------------------------------------- */
 
 .features-quick-lists-summary{
+
     font-weight: 400;
     font-size: 12px;
     color: #727272;
@@ -157,6 +159,7 @@ justify-content: space-between;
 }
 
 .features-quick-lists-button{
+
     font-weight: 500;
     font-size: 20px;
     color: #FFFFFF;
@@ -257,6 +260,7 @@ justify-content: space-between;
 /* facts section */
 
 .facts_title{
+
     font-weight: 700;
     font-size: 45px;
     color: #131313;
@@ -265,6 +269,7 @@ justify-content: space-between;
 }
 
 .facts_summary{
+
     font-weight: 400;
     font-size: 13px;
     color: #727272;
@@ -304,12 +309,14 @@ justify-content: space-between;
 }
 
 .counted_number{
+
     font-weight: 600;
     font-size: 35px;
     color: #424242;
 }
 
 .fact_title{
+
     font-weight: 500;
     font-size: 18px;
     color: #727272;
@@ -320,6 +327,7 @@ justify-content: space-between;
 /* feedbacks of our services  */
 
 .feedback-title{
+
     font-weight: 700;
     font-size: 45px;
     color: #131313;
@@ -330,11 +338,13 @@ justify-content: space-between;
 /* feedback title words color*/
 
 .feedbacks-word{
+
     color: #727272;
     font-weight: 500;
 }
 
 .clients-word{
+    
     color:#FF900E;
 }
 
@@ -392,7 +402,7 @@ justify-content: space-between;
 
     font-weight: 400px;
     font-size: 18px;
-    width: 130px;
+    width: 140px;
     height: 45px;
     background-color: #FB8200;
     color: white;
@@ -519,6 +529,7 @@ justify-content: space-between;
 
         width: 100%;
         height: 100%;
+        border-radius: 0;
     }
 
 /* quick lists of our features section*/
@@ -640,6 +651,12 @@ justify-content: space-between;
 
   /* feedbacks of our clients section */
 
+     .feedback-title{
+        font-weight: 900;
+        font-size: 40px;
+        margin: 80px 15;
+   }
+
     .clients-feedbacks{
 
         grid-template-columns: repeat(1,1fr);
@@ -671,6 +688,7 @@ justify-content: space-between;
     }
 
     .see-more-button{
+
         justify-content:center;
         align-items: center;
         margin-right: 0px;
@@ -682,33 +700,34 @@ justify-content: space-between;
 
     .sponsors_title{
 
-        font-weight: 550;
-        font-size: 35px;
+        font-weight: 600;
+        font-size: 40px;
+        margin-top: 50px;
     }
 
     .sponsors_summary{
 
         margin-left: 0;
-        margin-right: 0;
+        margin-right: 7px;
     }
 
     .logos{
 
         margin-top:30px ;
-        gap: 50px;
+        gap: 40px;
         flex-direction: column;
     }
 
     .logo{
 
-        width: 100px;
+        width: 140px;
         height: 35px;
     }  
 
     /* footer section */
 
     #footer{
-        margin: 100px 10px;
+        margin: 40px 10px;
     }
 
     .copyright_text{
