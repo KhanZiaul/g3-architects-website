@@ -51,7 +51,7 @@ justify-content: space-between;
     justify-content: center;
 }
 
-.bannner_title{
+.bannner_title_one{
     font-weight: 700;
     font-size: 64px;
     color: #131313;
@@ -89,9 +89,10 @@ justify-content: space-between;
     height: 60%;
     border-radius: 8px;
     display: block;
+    padding-bottom: 30px;
 }
 
-/* quick list of our features */
+/* quick lists of our features */
 
 .features_quicklist{
     display: flex;
@@ -119,7 +120,7 @@ justify-content: space-between;
     margin-bottom: 20px;
 }
 
-/* features quick list title word color */
+/* features quick lists title word color */
 
 .quick_list_word{
     color: #727272;
@@ -151,14 +152,14 @@ justify-content: space-between;
 }
 
 
-/* Features Description */
+/* features description */
 
 .features_description{
     display: flex;
-    gap:40px;
+    gap:70px;
     align-items: center;
     justify-content: center;
-    margin: 130px 90px 200px 90px;
+    margin: 130px 50px 130px 90px;
 }
 
 .features_title{
@@ -204,11 +205,132 @@ justify-content: space-between;
     width: 620px;
     height: 870px;
     border-radius: 8px;
+    display: block;
+    position: 
 }
+.experience_button{
+    width: 240px;
+    height: 150px;
+    background: #FF900E;
+    border-radius: 8px;
+    padding: 35px;
+    color: #FFFFFF;
+    border: none;
+    position: relative;
+    text-align: center;
+    right: 50px;
+    bottom: 110px;
+}
+
+/* experience  button word color */
+
+.year_word{
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+/* -------------------------------- */
+
+
+/* some facts */
+
+.facts_title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-left: 120px;
+    margin-bottom: 24px;
+}
+
+.facts_summary{
+    font-weight: 400;
+    font-size: 13px;
+    color: #727272;
+    margin-left: 120px;
+    margin-right: 700px;
+}
+
+.facts{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 110px;
+}
+.fact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotate(0deg);
+    transition: background-color 2s ease-in-out, transform 1s ease-in-out,border-radius 2s ease-in-out;
+    
+}
+
+.fact:hover{
+    background-color: #efc9af;
+    transform: rotate(360deg);
+    border-radius: 50px;
+}
+.count_number{
+    font-weight: 600;
+    font-size: 35px;
+    color: #424242;
+}
+
+.fact_title{
+    font-weight: 500;
+    font-size: 18px;
+    color: #727272;
+    transition: color 3s;
+}
+   
+
+/* Sponsors */
+
+.sponsors_title{
+    font-weight: 700;
+    font-size: 40px;
+    color: #131313;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sponsors_summary{
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.logos{
+margin-top:50px ;
+display: flex;
+gap: 120px;
+justify-content: center;
+align-items: center;
+}
+
+.logo_image{
+width: 130px;
+height: 40px;
+}
+
 
 /* Responsiveness */
 
 @media screen and (max-width:768px) {
+
+         /* navigation */
+
     #navigation{
         justify-content: center;
         flex-direction: column;
@@ -227,7 +349,10 @@ justify-content: space-between;
         font-size: 40px;
         margin: 10px;
     }
-    .bannner_title{
+
+     /* banner */
+
+    .bannner_title_one{
         font-weight: 600;
         font-size: 40px;
         margin-top: 20px;
@@ -250,6 +375,9 @@ justify-content: space-between;
         width: 100%;
         height: 100%;
     }
+
+/* quick lists of our features */
+
     .features_quicklist{
         justify-content:center;
         align-items: center;
@@ -288,6 +416,9 @@ justify-content: space-between;
         justify-content: center;
         align-items: center;
     }
+
+    <!-- features description -->
+
     .features_description{
         flex-direction: column;
         gap:40px;
@@ -319,4 +450,43 @@ justify-content: space-between;
         height: 100%;
         border-radius: 0;
     }
+    .experience_button{
+        margin: 40px auto;
+        position: static;
+        bottom: 0;
+        left: 0;
+    }
+
+        /* some facts */
+
+    .facts_title{
+        font-weight: 700;
+        font-size: 45px;
+        margin:10px 0;
+        text-align: center;
+    }
+    
+    .facts_summary{
+        font-weight: 400;
+        font-size: 13px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .facts{
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+    }
+    .fact{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Sponsors */
+
+     
+
+
 }
