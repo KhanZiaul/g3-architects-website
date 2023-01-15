@@ -51,13 +51,13 @@ justify-content: space-between;
     justify-content: center;
 }
 
-.bannner_title_one{
+.banner_title_one{
     font-weight: 700;
     font-size: 64px;
     color: #131313;
     margin-top: 116px;
 }
-.bannner_title_two{
+.banner_title_two{
     font-weight: 700;
     font-size: 64px;
     color: #131313;
@@ -292,6 +292,92 @@ justify-content: space-between;
 }
    
 
+
+
+/* feedback of our services  */
+
+.feedback_title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    text-align: center;
+    margin: 100px 0;
+}
+
+/* feedback title words color*/
+
+.reviews_word{
+    color: #727272;
+    font-weight: 500;
+}
+
+.customers_word{
+    color:#FF900E;
+}
+
+/* --------------------------- */
+
+.reviews{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: 0 90px;
+}
+
+
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviewer_image{
+height: 150px;
+width: 150px;
+}
+
+.reviewer_name{
+    font-weight: 500;
+    font-size: 35px;
+    color: #131313;
+
+}
+
+.reviews_summary{
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+    margin-top: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.see_more{
+    font-weight: 400px;
+    font-size: 18px;
+    width: 130px;
+    height: 45px;
+    background-color: #FB8200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-arrow-right{
+    margin-left: 10px;
+}
+
 /* Sponsors */
 
 .sponsors_title{
@@ -304,7 +390,7 @@ justify-content: space-between;
 
 .sponsors_summary{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     color: #727272;
     text-align: center;
     margin-left: 30%;
@@ -320,10 +406,22 @@ align-items: center;
 }
 
 .logo_image{
-width: 130px;
-height: 40px;
+width: 120px;
+height: 35px;
 }
 
+/* footer */
+
+.footer{
+    margin: 130px 0;
+}
+
+.copyright{
+    text-align: center;
+    color: #424242;
+    font-weight: 400;
+    font-size: 20px;
+}
 
 /* Responsiveness */
 
@@ -352,13 +450,13 @@ height: 40px;
 
      /* banner */
 
-    .bannner_title_one{
+    .banner_title_one{
         font-weight: 600;
         font-size: 40px;
         margin-top: 20px;
         text-align:center;
     }
-    .bannner_title_two{
+    .banner_title_two{
         font-weight: 600;
         font-size: 40px;
         margin-bottom: 15px;
@@ -417,7 +515,7 @@ height: 40px;
         align-items: center;
     }
 
-    <!-- features description -->
+     /* features description  */
 
     .features_description{
         flex-direction: column;
@@ -484,9 +582,104 @@ height: 40px;
         margin-bottom: 10px;
     }
 
-    /* Sponsors */
+  /* feedback of our services  */
 
-     
+.feedback_title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    text-align: center;
+    margin: 100px 0;
+}
+
+/* feedback title words color*/
+
+.reviews_word{
+    color: #727272;
+    font-weight: 500;
+}
+
+.customers_word{
+    color:#FF900E;
+}
+
+/* --------------------------- */
+
+.reviews{
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    margin: 0 ;
+}
 
 
+.review{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviewer_image{
+height: 100px;
+width: 100px;
+}
+
+.reviewer_name{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.reviews_summary{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.button{
+    justify-content:center;
+    align-items: center;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+    
+/* Sponsors */
+
+.sponsors_title{
+    font-weight: 550;
+    font-size: 35px;
+    text-align: center;
+}
+
+.sponsors_summary{
+    font-weight: 400;
+    font-size: 15px;
+    color: #727272;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logos{
+margin-top:30px ;
+gap: 50px;
+flex-direction: column;
+}
+
+.logo_image{
+width: 100px;
+height: 35px;
+}
+
+/* footer */
+
+.footer{
+    margin: 100px 0;
+}
+
+.copyright{
+    font-weight: 400;
+    font-size: 18px;
+}
 }
