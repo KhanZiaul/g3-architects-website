@@ -471,7 +471,7 @@ justify-content: space-between;
     font-size: 20px;
 }
 
-/* Responsiveness for small device */
+/* Responsiveness for mobile device */
 
 @media screen and (max-width:768px) {
 
